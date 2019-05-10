@@ -1,0 +1,4 @@
+New Angular Project does not work
+     - Check node version
+     - Check Angular Instalation 
+     - Open Project directory and type ng-serve
