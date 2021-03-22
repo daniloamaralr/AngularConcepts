@@ -1,12 +1,17 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      <h3>I'm in the AppComponent!</h3>
+      <h3>Directives - Practice!</h3>
       <hr>
-      <app-servers></app-servers>
-      <!--<div app-servers></div>-->
-      <!--<div class="app-servers"></div>-->
+      <button class="btn btn-primary" (click)="onPressButton()"> Display Details</button>
+      <p *ngIf="isButtonPressed"> Secret Password </p>
+
+      <div 
+        *ngFor="let click of clickArray; let i = index"
+        [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'transparent'}"
+        [ngClass]="{'white-text': i >= 4}"
+      >{{click}}</div>
+
     </div>
   </div>
 </div>
-
